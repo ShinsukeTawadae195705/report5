@@ -6,6 +6,13 @@ public class LivingThing {
     private int attack;
     private boolean dead;
 
+    /**
+     * HeroとEnemyとの戦闘メソッド。
+     * HeroまたはEnemyのいずれかのヒットポイント数が0以下になるまで繰り返し実行する。
+     * @param name 戦闘するプレイヤー及び敵の名称。
+     * @param maximumHP 戦闘するプレイヤー及び敵の初期ヒットポイント数。
+     * @param attack 戦闘するプレイヤー及び敵の攻撃力。
+     */
     public LivingThing(String name,int maximumHP,int attack){
         this.name = name;
         hitPoint = maximumHP;
